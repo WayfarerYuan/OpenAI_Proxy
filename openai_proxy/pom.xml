@@ -14,7 +14,7 @@
 	<name>openai_proxy</name>
 	<description>A Proxy server for OpenAI services.</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -1,6 +1,12 @@
-version: '3.8'
+version: '0310'
 services:
+  app:
+    build: ./openai_proxy
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
   redis:
-    image: redis:latest
+    image: "redis:latest"
     ports:
       - "6379:6379"

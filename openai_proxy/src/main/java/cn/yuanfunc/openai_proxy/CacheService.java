@@ -24,8 +24,7 @@ public class CacheService {
         try {
             return redisTemplate.opsForValue().get(key);
         } catch (Exception e) {
-            throw new RuntimeException("This is a test exception");
-
+            throw new RuntimeException("Failed to get response from cache", e);
         }
     }
 
