@@ -35,6 +35,14 @@ curl http://localhost:8080/cache/myKey
 ```
 你可以将内容替换成你想要转发给 OpenAI API 的实际请求内容。
 
+### 停止容器
+如果你想停止容器，可以使用以下命令：
+
+```bash
+docker stop <CONTAINER_ID>
+```
+你可以通过 `docker ps` 命令查看容器的 ID。
+
 ### 自定义
 这个 Docker 镜像预设了通用配置，但你完全可以根据需要进行调整，无论是扩展镜像还是修改源代码都行。
 
